@@ -1,0 +1,83 @@
+  <!--cURL for testing https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/4/8/4/WU1004H_Chicken-Nuggets_s4x3.jpg.rend.hgtvcom.616.462.suffix/1428675741536.jpeg -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Congressional App Challenge</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="modal.css" rel="stylesheet" type="text/css" />
+    <link href="darkMode.css" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/70772a0888.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+  </head>
+    <header> 
+      <h3 id="title">Peech Assistant</h3>
+      <!-- <img src = "logoWBackground.png" id = "peechLogo"/> -->
+      <!--<link rel="icon" type="image/x-icon" href="logoWBackground.png"/>
+      <img src = "logoWBackground.png" id = "icon"/>
+
+      <!-- add word button -->
+      <button class="open-button" onclick="openForm()">Add Word</button> 
+  
+      <!-- creates popup in header so it overlays body elements -->
+      <div class="form-popup" id="enterWord">
+        <form class="form-container">
+          <!-- text label -->
+          <label id="saakshiWantedMeToChangeThis">New Word</label> 
+          <!-- text input -->
+          <input type="text" id="userInputWord" placeholder="Enter the word..." required/>
+          <!-- img label -->
+          <label id="saakshiWantedMeToChangeThis">Image URL</label>
+          <!-- img input -->
+          <input type="url" name="url" id="dImageBox"/>
+          <!-- enter button -->
+          <button type = "button" class="btn" onclick="saveTextAndDisplay()">Enter Word</button>
+          <!-- cancel button -->
+          <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+      </div>
+      <div id = "darkmode">
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </header>
+  
+  <body>
+    <script src="script.js"></script>
+     <!-- The Modal -->
+    <div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+        <p>Welcome to Peech Assistant! Peech assistant saves all your data on your device and not on any server. We respect your privacy and do not use any kind of invasive cookies to track or spy on you. In order to do save your data, you must have cookies enabled.</p>
+        <button id="dontShowAgain">Do Not Show Again</button>
+    </div>
+    </div>
+    <script src="modal.js"></script>
+    <!-- <button type = "button" class="btn" onclick="emptyArrays()" id="clearButton">Clear All Cards</button> -->
+    <i class="fas fa-trash" id="clearButton" onclick="emptyArrays()" title="Clear All Cards"></i>
+  </body>
+  
+  <footer>
+    <div class = "sentencePreviewClass">
+      <p id="sentencePreview"/>
+    </div>
+    <i class="fas fa-backspace" id="backButton" onclick = "deleteButton()" title="Clear Sentence"></i>
+    
+    <div class = "text-center">
+      <!-- speak button -->
+      <button id = "speakSentence" onclick = "speak()">Speak Sentence</button>
+    </div>
+  </footer>
+</html>
